@@ -3,7 +3,6 @@
 function showTime(id) {
     date = new Date;
     
-    
     h = date.getHours();
     if (h < 10) {
         h = "0" + h;
@@ -16,7 +15,7 @@ function showTime(id) {
     if (s < 10) {
         s = "0" + s;
     }
-    resultat = h + ':' + m + ':' + s + ' ' + amPm;
+    resultat = h + ':' + m + ':' + s;
     document.getElementById(id).innerHTML = resultat;
     setTimeout('showTime("' + id + '");', '1000');
     return true;
